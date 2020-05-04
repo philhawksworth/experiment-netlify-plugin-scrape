@@ -1,0 +1,12 @@
+[build]
+  publish = "dist"
+
+
+# Config for the Netlify Build Plugin: netlify-plugin-go-static
+[[plugins]]
+  package = "../netlify-plugin-go-static"
+
+  # Specify which urls to scrape and save as static pages
+  [plugins.inputs]
+    url = 'https://css-tricks.com'
+
